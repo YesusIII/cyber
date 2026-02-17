@@ -3,12 +3,9 @@
     border: 3px black;
 }
 /**********************/
-body{
-    background: url(./assets/bg4k.jpg) center;
-    background-repeat: no-repeat;
-}
+
 /* Bandeau TOP */
-.top {
+header {
     background: url(./assets/banCyb.jpg) center;
     border: 1px solid red;
     display:flex;
@@ -19,22 +16,36 @@ body{
     height:100px;
     width:line;
 }
-.top img {
+header img {
     height: 100px;
     width: 125px;
 }
-.top input{
+header input{
     background: none;
     font-size: large;
     font-family: fantasy;
     color:hsl(231, 32%, 57%);
 }
+body{
+    background: url(./assets/bg4k.jpg) center;
+    background-repeat: no-repeat;
+}
+
+/* MAIN (NAV - WELCOME & CARDS */
+main{
+    display: flex;
+    border: 1px solid blue;
+    width: line;
+}
+
+                    /* NAV */
 nav{
     border: 1px solid #050105;
     height: 750px;
     max-width: 350px;
     padding: 15px;
     margin: 0;
+    display: block;
 }
 .imgMenu {
     height: 30px;
@@ -77,5 +88,80 @@ nav li:hover{
     transform: scale(1.2) translateX(50px) rotate(-10deg);
     color: aqua;
     font-size: 2rem;
+}
+                    /* Welcome */
+.Welcome {
+    display: inline;
+    height: 100px;
+    width: line;
+    border: 1px solid white;
+}
+.Welcome h2{ 
+    color: aqua;
+    text-align: center;
+    font-size: 3rem;
+    margin: 5px;
+text-shadow: 2px 3px 5px hsla(0, 51%, 62%, 0.712);
+}
+
+.Welcome h3{
+    color: green;
+    text-align: center;
+    font-style: italic;
+    font-size: 1.5rem;
+    margin: 0;
+    text-shadow: 1px 1px 2px #ddd4d488;
+}
+
+                    /* Cartes test /*/
+.boxcard {
+  height: auto;
+  margin: 10px;
+  display: flex;
+  place-items: center;
+  font-family: system-ui;
+  overflow: clip auto;
+  padding: 10px;
+}
+
+.card {
+  color: #e5e5e5;
+  max-width: 500px;
+  max-height: 1000px;
+  border-radius: 50px;
+  background: #ec8e724b;
+  box-shadow: inset 0 0 4px -2px #ffffff55, 0 0 4px -2px #ffffff55;
+  backdrop-filter: blur(20px);
+  font-size: 1.5rem;
+  font-weight: 200;
+  margin: 5px;
+  
+}
+
+.card img {
+  margin:15px;
+    max-width: 450px;
+  height: 750px;
+  border-radius: 40px;
 
 }
+.card h2{
+    color: aqua;
+    text-align: center;
+    font-family: Garamond, sans-serif;
+    text-shadow: 2px 3px 5px #332020;
+}
+.card p{
+    color: #00ff37dc;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    font-size: 1.4rem;
+    text-align: justify;
+    text-shadow: -3px -1px 5px #050105;
+}
+
+.card_inner{
+    position: relative;
+    place-items: center;
+}
+/* FIN*/
